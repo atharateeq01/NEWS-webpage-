@@ -10,7 +10,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     width: 100%;
-    position: sticky;
+    position:fixed;
     background-color: rgb(255, 255, 255);
     flex-wrap: wrap; 
     top: 0;
@@ -28,26 +28,64 @@ body{
     align-items: center;
     align-content: flex-end;
     width: 55%;    
-    font-family: "Open Sans";
-    font-weight: 400;
+    font-family: "Arial";
     font-style: normal;
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(135, 130, 130);
+    height: 100%;
 }
 .top_button p{
     margin: 7px;
+}
+.top_button p:hover{
+    color:  rgb(81, 78, 78);
+    cursor: pointer;
 }
 .top_button input{
     margin: 7px;
 }
 .btn_on_top{
-    border: 1px solid rgb(225, 91, 91);
-    color: rgb(225, 91, 91);
+    border: 1px solid #b3064f;
+    color: #b3064f; 
     height: 40px;
     width: 90px;
     font-weight: 100;
     background-color: rgb(255, 255, 255);
 }
+.btn_on_top:hover {
+    background-color:#cb246a;
+    color: white;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #424141;
+    width: 200px;
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 18px;
+    padding: 0;
+    color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(18, 18, 18, 0.2);
+    margin: 0;
+    z-index: 999;
+    line-height: 1.8em;
+}
+
+.dropdown:hover .dropdown-content {
+    display : block;
+}
+.dropdown-content p:hover{
+    background-color: #436fb4;
+    color: aliceblue;
+}
+
 
 
 .back{
@@ -66,8 +104,7 @@ body{
     align-items: center;
     align-content: flex-start   ;
 }
-.back_content{
-    font-family:Candara Light; 
+.back_content{ 
     line-height: 1.3em; 
     letter-spacing: 1px;
     margin-top: 200px;
@@ -76,25 +113,37 @@ body{
 
 .back_h1{
     font-size: 80px; 
-    color:aliceblue; 
+    font-family: Verdana, sans-serif; 
+    font-weight: 100;
     line-height: 1.2em; 
+    color:aliceblue;
     
 }
 .back_h2{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 100;
     font-size: 25px; 
     color:aliceblue;
     line-height: 1.4em; 
+    
 }
 .back_input{
+    font-family: inherit;
     font-size: 20px; 
-    height: 60px; 
+    height: 40px; 
     border: 1px solid; 
+    border-radius: 5px;
     color:rgb(0, 0, 0);
     border-color: #f9f9f9; 
     background:#f9f9f9;
     margin: auto;
 }
 
+input:hover{
+    
+    background-color:#d3cdcd;
+    cursor: pointer;
+}
 
 
 .services{
@@ -104,7 +153,7 @@ body{
     align-items: flex-start;
     align-content: space-between;
     width: 100%;
-    margin: auto;
+    margin: 0;
     background-color: rgb(244, 238, 238);
     
 }
@@ -117,11 +166,14 @@ body{
     font-family: 'Open Sans', arial;
     font-weight: 100;
     font-size: 15px;
-    width:20%;
+    width:22%;
     color: #686868;
     padding: 2px 16px;
     transition: 0.3s;
     margin-top: 60px;
+}
+img:hover{
+    cursor: pointer;
 }
 
 
@@ -140,16 +192,59 @@ body{
     flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 80px;
+    margin-left: 10%;
     width: 80%;
     text-align: center;
     font-size: 1.3em; 
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: 400;
+    font-family: Verdana, sans-serif; 
+    font-size: 20px;
+    font-weight: 200;
     color: #686868;
     letter-spacing: 1px;
     line-height: 1.86em;
     font-style: italic;
 }
+.qoute_write{
+    cursor: grab;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
 
 
 .safty{
@@ -180,6 +275,7 @@ body{
     align-content: flex-start;
     width: 45%;
     margin-left: 50px;
+    font-family: "Arial";
 }
 .div_text_head{
     color: #436fb4; 
@@ -192,6 +288,9 @@ body{
     text-align:left;
     color: #606060; 
     line-height: 2.0em;
+    margin-top: 30px;
+    font-family: Verdana, sans-serif; 
+    font-size: 15px;
 }
 
 .services2{
@@ -209,7 +308,8 @@ body{
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-end;
-    font-family: 'Open Sans', arial;
+    font-family: Verdana, sans-serif; 
+    font-size: 20px;
     font-weight: 400;
     color: hsl(0, 1%, 28%);
     width: 30%;   
@@ -222,17 +322,39 @@ body{
     color:rgb(62, 62, 60); 
     font-size:20px;
 }
+.ser_div_text1:hover{
+    cursor: pointer;
+    color: rgb(225, 95, 95);
+}
 .ser_div_time{
     color:rgb(186, 186, 180); 
     font-size:10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 .ser_div_text2{
     color:rgb(134, 134, 129); 
     font-size:15px;
+    
+    font-family: Verdana, sans-serif;
 }
 
+.btn_ask{
+    font-size: 20px; 
+    height: 60px; 
+    border: 2px solid; 
+    border-color: #f9f9f9; 
+    color:#ebeced;
+    background: #2b4b7e;
+    font-size: 20px;  
+    border-radius: 5px;
+    font-family: Verdana, sans-serif;
+}
+.btn_ask:hover{
+    color: #000000; 
+    background: #fdfeff;
+}
 
 
 
@@ -274,6 +396,7 @@ body{
 
 
 
+
 .footer_div2_h2{
     font-family: Arial; 
     font-weight: 500; 
@@ -298,4 +421,16 @@ body{
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+}
+
+.phone_no{
+    font-family: Arial; 
+    font-weight: 500; 
+    line-height: 1.1; 
+    font-size:small;
+     letter-spacing: 
+     1px; line-height: 1.86em;
+}
+.phone_no:hover{
+    cursor: pointer;
 }
