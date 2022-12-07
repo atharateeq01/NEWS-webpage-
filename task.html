@@ -13,7 +13,7 @@
         <div class="top_logo">
             <img src="logo.jpg" onclick="location.href='#';"  alt="logo" height="50px" >
         </div>
-        <div class="top_button">
+        <div class="top_button" id="nav_bar_hambar">
             <p>HOME</p>
             <div class="dropdown">
                 <p >SERVICES</p>
@@ -41,6 +41,17 @@
         </div>
     </div>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav_bar_hambar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
     <!-- front image with tag line -->
     <div class="back" >
         <div style="width: 10%;"></div>
@@ -54,35 +65,35 @@
 
     <div class="services">
         <div class="ser_div">
-            <img src="1.jpg" alt="Avatar" onclick="location.href='#';" style="width:60%">
+            <img src="1.jpg" alt="Avatar" onclick="location.href='#';" style="width:80%">
             <h4><b>Meter Service</b></h4>
         </div>
         <div class="ser_div">
-            <img src="2.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="2.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>Electric Distribution Services</b></h4>
         </div>
         <div class="ser_div">
-            <img src="3.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="3.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>Lighting Services</b></h4>
         </div>
         <div class="ser_div">
-            <img src="4.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="4.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>Inspection & Maintenanc</b></h4>
         </div>
         <div class="ser_div">
-            <img src="6.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="6.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>Professional Services</b></h4>
         </div>
         <div class="ser_div">
-            <img src="7.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="7.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>EV Charging Stations</b></h4>
         </div>
         <div class="ser_div">
-            <img src="1.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="1.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>Material Management Services</b></h4>
         </div>
         <div class="ser_div">
-            <img src="6.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:60%">
+            <img src="6.jpg" alt="Avatar"  onclick="location.href='#';"  style="width:80%">
             <h4><b>Private Locating Services</b></h4>
         </div>
     </div>
@@ -93,40 +104,40 @@
                 <div>"The Inspection &amp; Maintenance team are excellent to work with! They are prompt, present themselves well, and make contact with us when needed. You should feel blessed to have such good folks working with your company"</div>
                 <div style="font-size: 15px;" >Operations Manager, Energy Cooperativey</div>
             </div>
-            </div>
-          <div class="mySlides fade">
-            <div class="qoute_write">
+        </div>
+        <div class="mySlides fade">
+           <div class="qoute_write">
                 <div>"The project manager we have from UPA has proven to be trustworthy , meets project deliverable, and is upfront with us as the client</div>
                 <div style="font-size: 15px;" >IT Professional, Investor-Owned Utility</div>
             </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="qoute_write">
+                <div>The COVID-19 pandemic hit just as we were
+                about to start. UPA went above and
+                beyond to make sure the project started
+                on time and worked with all parties
+                involved to mitigate [the] risk the
+                pandemic could potentially have on the
+                project. I feel that the project team
+                and our utility looks at UPA as a
+                trusted partner.</div>
+                <div style="font-size: 15px;" >Director, Municipal Utility</div>
             </div>
-            <div class="mySlides fade">
-              <div class="qoute_write">
-                  <div>The COVID-19 pandemic hit just as we were
-                    about to start. UPA went above and
-                    beyond to make sure the project started
-                    on time and worked with all parties
-                    involved to mitigate [the] risk the
-                    pandemic could potentially have on the
-                    project. I feel that the project team
-                    and our utility looks at UPA as a
-                    trusted partner.</div>
-                  <div style="font-size: 15px;" >Director, Municipal Utility</div>
-              </div>
-              </div>
-              <div class="mySlides fade">
-                <div class="qoute_write">
-                    <div>Thank you for all your hard work. Even though you are no longer on-site, I have received prompt responses regarding any questions or issues that have come up since your departure.</div>
-                    <div style="font-size: 15px;" >Inspector/Supervisor, Municipal Utility</div>
-                </div>
-                </div>
-                <div class="mySlides fade">
-                  <div class="qoute_write">
-                      <div>I&#39;ve always appreciated UPA&rsquo;s interest in working to find mutually acceptable solutions to often difficult and highly varied challenges that we encounter on installation projects. I feel very comfortable working with UPA on projects due to your focus on safety and attention to detail. When issues arise they are dealt with promptly and professionally.</div>
-                      <div style="font-size: 15px;" >Director, AMI Firm</div>
-                  </div>
-              </div>
-            </div>  
+        </div>
+        <div class="mySlides fade">
+            <div class="qoute_write">
+                <div>Thank you for all your hard work. Even though you are no longer on-site, I have received prompt responses regarding any questions or issues that have come up since your departure.</div>
+                <div style="font-size: 15px;" >Inspector/Supervisor, Municipal Utility</div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="qoute_write">
+                <div>I&#39;ve always appreciated UPA&rsquo;s interest in working to find mutually acceptable solutions to often difficult and highly varied challenges that we encounter on installation projects. I feel very comfortable working with UPA on projects due to your focus on safety and attention to detail. When issues arise they are dealt with promptly and professionally.</div>
+                <div style="font-size: 15px;" >Director, AMI Firm</div>
+            </div>
+        </div>
+    </div>  
         <br>
         
         <!-- The dots/circles -->
@@ -137,36 +148,34 @@
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
-    </div>
     <script>
-        
         let slideIndex = 1;
         showSlides(slideIndex);
-        
+
         function currentSlide(n) {
-          showSlides(slideIndex = n);
+        showSlides(slideIndex = n);
         }
-        
+
         function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
+        }
+        for (i = 0; i <dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
         }
     </script>
 
     <div class="safty">
         <div class="satfy_img"> 
-            <img src="5.jpg" alt="Avatar">
+            <img src="5.jpg" alt="Avatar" width="100%">
         </div>
         <div class="safty_text">
             <div class="div_text_head">UPA SAFETY</div>
@@ -177,6 +186,7 @@
         </div>
 </div>
 
+   
     
     <div>
         <div class="services2">
@@ -220,16 +230,16 @@
     </div>
     
 
-    <div  style=" color:aliceblue; height : 250px; background: #2b4b7e;">
+    <div  class="answer">
         <table style="width:100%; margin-left: auto; margin-right: auto;">
             <tbody>
                 <tr style="height: 30px;"></tr>
                 <tr style="width: 100%;">
-                    <th style="width: 50%; float:left;">
+                    <th class="answer_text">
                        <h1 >Ask Question</h1>
                        <h3 >We're here to help.</h3>
                     </th>
-                    <th style="width: 50%;">
+                    <th class="text_btn">
                         <input type="button" onclick="location.href='#';"   class="btn_ask" value="Contact Us"><br><br>
                         <input type="button" onclick="location.href='#';"   class="btn_ask"  value="Click here to apply for job">
                     </th>

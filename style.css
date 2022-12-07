@@ -1,9 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-}
-.all{
-    margin: 10%;
+    overflow-x: hidden;
 }
 /* nav bar */
 .top_container{
@@ -94,7 +92,7 @@ body{
         rgba(0, 0, 0, 0.5)
       ), url(construction.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: 100% 100%;
     width: 100%;
     opacity: 100;
     margin-left: 0;
@@ -149,19 +147,15 @@ input:hover{
 .services{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     align-content: space-between;
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    padding: 5%;
     background-color: rgb(244, 238, 238);
     
 }
 
 .ser_div{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
     font-family: 'Open Sans', arial;
     font-weight: 100;
@@ -175,7 +169,29 @@ input:hover{
 img:hover{
     cursor: pointer;
 }
-
+@media (max-width: 1080px) {
+    
+    .ser_div{
+        width: 44%;
+    }
+    
+}
+@media (max-width: 1170px) {
+    
+    .ser_div{
+        width: 30%;
+    }
+    
+}
+@media (max-width: 750px) {
+    .services{
+        padding-left: 10%;
+    }
+    .ser_div{
+        width:90%;
+    }
+    
+}
 
 .qoute{
     display: flex;
@@ -251,8 +267,11 @@ to {opacity: 1}
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    align-content: flex-start;
     width: 90%;
-    margin: 50px;
+    margin-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
     line-height: 1.86em;
     font-family: 'Open Sans', arial;
     font-weight: 400;
@@ -260,21 +279,11 @@ to {opacity: 1}
 }
 
 .safty_img{ 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: flex-start;
     width: 30%;
 }
 .safty_text{ 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 45%;
-    margin-left: 50px;
+    width: 40%;
+    padding-left: 5%;
     font-family: "Arial";
 }
 .div_text_head{
@@ -292,6 +301,29 @@ to {opacity: 1}
     font-family: Verdana, sans-serif; 
     font-size: 15px;
 }
+
+@media (max-width: 1146px) {
+    .safty_text{
+        width:100%;
+    }
+    .safty_img{
+        width:100%;
+    }
+    .safty{
+        flex-direction: column;
+        align-content: center;
+    }
+    
+}
+@media (max-width: 767px) {
+    .ser_div{
+        width:90%;
+    }
+    
+} 
+
+
+
 
 .services2{
     display: flex;
@@ -338,6 +370,35 @@ to {opacity: 1}
     font-size:15px;
     
     font-family: Verdana, sans-serif;
+}
+
+@media (max-width : 1065px   ) {
+    .ser_div2{
+        width: 45%;
+    }
+    
+}
+
+@media (max-width : 870px   ) {
+    .ser_div2{
+        width: 85%;
+    }
+    
+}
+
+.answer{
+    color:aliceblue; 
+    width: 100%;
+    height : 250px; 
+    background: #2b4b7e;
+    padding-left: 10%;
+}
+.answer_text{
+    width: 50;
+    float: left;
+}
+.answer_btn{
+    width: 50;
 }
 
 .btn_ask{
