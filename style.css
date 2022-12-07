@@ -32,10 +32,21 @@ body{
     color: rgb(135, 130, 130);
     height: 100%;
 }
-.top_button p{
+@media (max-width:1170px) {
+    .top_logo{
+        width: 20%;
+    }
+    .top_button{
+        width: 30%;
+    }
+    .now{
+        width: 100%;
+    }
+}
+.top_button div{
     margin: 7px;
 }
-.top_button p:hover{
+.top_button div:hover{
     color:  rgb(81, 78, 78);
     cursor: pointer;
 }
@@ -83,6 +94,50 @@ body{
     background-color: #436fb4;
     color: aliceblue;
 }
+/*
+.ham_bar{
+    display: none;
+    cursor: pointer;
+}
+.ham_bar div{
+    display: block;
+    width :25px;
+    height: 10px;
+    margin:5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: rgb(43, 41, 41);
+}
+@media (max-width: 910px) {
+    .ham_bar{
+        display: block;
+    }
+    .ham_bar.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .ham_bar.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45 deg);
+    }
+    .ham_bar.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45 deg);
+    }
+    .top_button{
+        position:fixed;
+        left: -100;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+    }
+    .nav_link{
+        margin: 16px 0;
+    }
+    .top_button.active{
+        left:0;
+    }
+} */
 
 
 
@@ -147,10 +202,11 @@ input:hover{
 .services{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     align-content: space-between;
     width: 90%;
-    padding: 5%;
+    padding: 5% 10%;
     background-color: rgb(244, 238, 238);
     
 }
@@ -160,7 +216,7 @@ input:hover{
     font-family: 'Open Sans', arial;
     font-weight: 100;
     font-size: 15px;
-    width:22%;
+    width:20%;
     color: #686868;
     padding: 2px 16px;
     transition: 0.3s;
@@ -172,23 +228,20 @@ img:hover{
 @media (max-width: 1080px) {
     
     .ser_div{
-        width: 44%;
+        width: 20%;
     }
     
 }
 @media (max-width: 1170px) {
     
     .ser_div{
-        width: 30%;
+        width: 28%;
     }
     
 }
 @media (max-width: 750px) {
-    .services{
-        padding-left: 10%;
-    }
     .ser_div{
-        width:90%;
+        width:20%;
     }
     
 }
@@ -388,17 +441,17 @@ to {opacity: 1}
 
 .answer{
     color:aliceblue; 
-    width: 100%;
+    width: 90%;
     height : 250px; 
     background: #2b4b7e;
     padding-left: 10%;
 }
 .answer_text{
-    width: 50;
+    width: 40;
     float: left;
 }
 .answer_btn{
-    width: 50;
+    width: 40;
 }
 
 .btn_ask{
